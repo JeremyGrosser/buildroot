@@ -86,6 +86,13 @@ config BR2_EXTRA_GCC_CONFIG_OPTIONS
 	  include. Those options are applied for all of the gcc
 	  initial, gcc intermediate and gcc final passes.
 
+config BR2_TOOLCHAIN_BUILDROOT_ADA
+    bool "Enable Ada support"
+    help
+      Enable this option if you want your toolchain to support the
+      Ada language and you want Ada libraries to be installed on
+      your target system.
+
 config BR2_TOOLCHAIN_BUILDROOT_CXX
 	bool "Enable C++ support"
 	select BR2_INSTALL_LIBSTDCPP
